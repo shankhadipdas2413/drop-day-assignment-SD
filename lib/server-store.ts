@@ -34,10 +34,6 @@ declare global {
 
 function seedProducts(): ServerProduct[] {
   const now = Date.now();
-  const defs: Array<[string, string, string, number, number, number]> = [
-    // id, name, tagline, category, price, totalStock, dropOffsetMs (folded below)
-    ["nova-runner", "Nova Runner", "Reflective knit, foam-injected sole", 42, 60, 0] as any,
-  ];
   // Hand-authored catalog: mix of already-live, dropping-soon, and sold-out.
   const catalog: Array<{
     id: string;
